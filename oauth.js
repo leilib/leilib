@@ -1,5 +1,5 @@
 // oauth.js
-const CLIENT_ID = "4600246062856266";
+const CLIENT_ID = "4602042605636246";
 const REDIRECT_URI = "https://leilib.github.io/callback";
 const AUTH_URL = "https://auth.mercadolibre.com.br/authorization";
 
