@@ -1,6 +1,6 @@
 // oauth.js
 const CLIENT_ID = "4602042605636246";
-const REDIRECT_URI = "https://leilib.github.io/callback";
+const REDIRECT_URI = "https://leilib.github.io/UFRJ-logistics-tracker/callback";
 const AUTH_URL = "https://auth.mercadolibre.com.ar/authorization";
 function base64url(buffer) {
   return btoa(String.fromCharCode(...new Uint8Array(buffer)))
