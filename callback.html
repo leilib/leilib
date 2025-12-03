@@ -10,7 +10,6 @@
     const TOKEN_URL = "https://api.mercadolibre.com/oauth/token";
     const code = new URLSearchParams(location.search).get("code");
     const verifier = sessionStorage.getItem("pkce_verifier");
-
     if (code && verifier) {
       const body = new URLSearchParams({
         grant_type: "authorization_code",
