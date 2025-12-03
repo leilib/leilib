@@ -8,7 +8,6 @@
     const CLIENT_ID = "4602042605636246";
     const REDIRECT_URI = "https://leilib.github.io/callback";
     const TOKEN_URL = "https://api.mercadolibre.com/oauth/token";
-
     const code = new URLSearchParams(location.search).get("code");
     const verifier = sessionStorage.getItem("pkce_verifier");
 
@@ -20,7 +19,6 @@
         redirect_uri: REDIRECT_URI,
         code_verifier: verifier
       });
-
       fetch(TOKEN_URL, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
